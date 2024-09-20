@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | e-GRAD Portal</title>
+    <title>Login | e-GRAD Portal</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,6 +22,11 @@
         h1 {
             text-align: center;
             color: #333;
+        }
+        h4 {
+            text-align: center;
+            color: #333;
+            /*font-size: medium;*/
         }
         form {
             display: flex;
@@ -62,12 +67,97 @@
         .footer a:hover {
             text-decoration: underline;
         }
+        /* Header Section */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Search Box */
+        .search-box input {
+            padding: 5px;
+            width: 200px;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 20px;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .footer li a {
+            text-decoration: none;
+            color: #333;
+        }
     </style>
 </head>
 <body>
+    <div class="header">
+        <div class="logo">
+            <img src="iwt_6.jpg" alt="Graduation Cap and Diploma">
+        </div>
+        <ul class="navbar">
+            <li><a href="eexam.html">e-Exam</a></li>
+            <li><a href="openforum.html">Openforum</a></li>
+            <li><a href="eRepository.html">e-Repository</a></li>
+            <li><a href="myWall.html">MyWall</a></li>
+            <li><a href="login.html">Login/Register</a></li>
+        </ul>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+        </div>
+    </div>
     <!-- Registration Form -->
     <div class="container">
-        <h1>Register</h1>
+        <h1>Login</h1>
         <form action="registration.html" method="GET">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
@@ -78,7 +168,9 @@
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
             
-            <button type="submit">Register</button>
+            <button type="submit">Login</button>
+            <h4>Haven't registered yet?
+                <a href="registration.html">Register Now </a> </h4>
         </form>
     </div>
 
